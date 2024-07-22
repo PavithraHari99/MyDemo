@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="Test.Listeners"/>
+	</listeners>
+	<parameter name="URL" value="PRAcademy.com"/>
+	<parameter name="APIKey" value="123456"/>
+  
+  <test  name="Personal loan">
+	<parameter name="personal" value="personalloan.com"/>
+    <classes>
+       <class name="Test.day1"/>
+        <class name="Test.day2"/>
+    </classes>
+  </test> <!-- Test --> 
+  
+  
+  
+  <test  name="Car Loan">
+	<parameter name="car" value="Carloan.com"/>
+    <classes>
+       <class name="Test.day3">
+	   </class>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test  name="Home loan">
+	<parameter name="home" value="homeloan.com"/>
+    <classes>
+      <class name="Test.day4"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+  
+  
+</suite> <!-- Suite -->
