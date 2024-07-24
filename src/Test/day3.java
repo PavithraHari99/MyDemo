@@ -28,6 +28,11 @@ public class day3 {
 	public void WebloginCarLoan(String urlname,String key)
 	{
 		System.out.println("WEB Car");
+		
+		System.out.println("WEB Car");
+		
+		System.out.println("WEB Car");
+		
 		System.out.println(urlname);
 		System.out.println(key);
 	}
